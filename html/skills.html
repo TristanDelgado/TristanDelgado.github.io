@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <script>
+(function () {
+    try {
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    } catch (e) {}
+})();
+    </script>
     <title>Skills — Tristan Delgado</title>
     <link rel="icon" type="image/png" href="../images/favicon.png">
 
@@ -13,7 +22,10 @@
     <header class="site-header">
         <div class="header-top">
             <a class="logo" href="../index.html">Tristan Delgado</a>
-            <a class="btn" href="../files/Tristan%20Delgado%20Resume_07.31.2026.pdf" download="Tristan Delgado Resume.pdf">Download Resume</a>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="true">☀️</button>
+                <a class="btn" href="../files/Tristan%20Delgado%20Resume_07.31.2026.pdf" download="Tristan Delgado Resume.pdf">Download Resume</a>
+            </div>
         </div>
         <nav class="site-nav">
             <ul>
