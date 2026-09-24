@@ -4,4 +4,4 @@ Personal developer resume site — About, Education, Projects, Work Experience, 
 
 Plain HTML, CSS, and JavaScript, no build step. Open `index.html` directly in a browser to view locally.
 
-Live site: [add your GitHub Pages URL here once enabled]
+Live site: [tristan.delgado](https://tristandelgado.github.io/)
